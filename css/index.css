@@ -1,0 +1,882 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?847cag');
+    src: url('../fonts/icomoon.eot?847cag#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?847cag') format('truetype'), url('../fonts/icomoon.woff?847cag') format('woff'), url('../fonts/icomoon.svg?847cag#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+:root {
+    --swiper-theme-color: #fff!important;
+}
+
+body {
+    position: relative;
+    background-color: #f1f3f5;
+}
+
+
+/* 顶部导航区域 */
+
+.topBar {
+    height: 35px;
+    background-color: #000000;
+}
+
+.centerBox {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.topBar .centerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topBar a {
+    color: #999999;
+    font-weight: 700;
+}
+
+.topBar .leftBar {
+    display: flex;
+    line-height: 35px;
+}
+
+.topBar .leftBar span {
+    margin: 0 3px;
+}
+
+.topBar .rightBar {
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 35px;
+}
+
+.topBar .rightBar span {
+    margin: 0 3px;
+}
+
+.topBar .rightBar a {
+    padding: 0 3px;
+}
+
+.icon-ctrl:before {
+    font-family: 'icomoon';
+    content: "\ea50";
+}
+
+.icon-cart:before {
+    font-family: 'icomoon';
+    content: "\e93a";
+}
+
+
+/* 主导航区域 */
+
+.mainNav {
+    height: 75px;
+    background-color: #fff;
+}
+
+.mainNav .centerBox {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.mainNav .logo {
+    width: 103px;
+    height: 100%;
+    margin-right: 75px;
+}
+
+.mainNav .logo h1 {
+    width: 100%;
+    height: 100%;
+}
+
+.mainNav .logo h1 a {
+    display: block;
+    width: 103px;
+    height: 100%;
+    font-size: 0;
+    background: url(../images/logo_app.png) no-repeat;
+    background-size: 100%;
+}
+
+.mainNav .navText {
+    display: flex;
+    align-items: center;
+}
+
+.mainNav .navText li {
+    margin-right: 40px;
+}
+
+.mainNav .navText a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.icon-search:before {
+    font-family: 'icomoon';
+    content: "\e986";
+    font-size: 25px;
+    color: #a3a3a3;
+    line-height: 75px;
+    margin-left: 270px;
+}
+
+
+/* 轮播图区域 */
+
+.swiper {
+    width: 100%;
+    height: 550px;
+}
+
+.swiper .swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper .swiper-slide img {
+    width: 130%;
+    height: 100%;
+    position: absolute;
+    right: -216px;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 30px!important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px)!important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: 30px!important;
+    right: auto;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: 30px !important;
+    left: auto;
+}
+
+
+/* 商品导航区域 */
+
+.goodsNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 136px;
+    left: 120px;
+    width: 200px;
+    height: 496px;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 3px 3px 6px 6px rgba(222, 222, 222, .2);
+}
+
+.goodsNav li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px;
+}
+
+.goodsNav li a {
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+.icon-chevron-right:before {
+    font-family: 'icomoon';
+    content: "\e901";
+}
+
+
+/* 副导航区域 */
+
+.subNav {
+    height: 145px;
+}
+
+.subNav .centerBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subNav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subNav li img {
+    width: 48px;
+    height: 48px;
+}
+
+.subNav li span {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+/* 新色新品区域 */
+
+.newGoods {
+    height: 194px;
+}
+
+.newGoods .centerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newGoods .centerBox li {
+    width: 291px;
+}
+
+.newGoods .centerBox li img {
+    width: 100%;
+}
+
+
+/* 秒杀和限时购区域 */
+
+.msAndXsg {
+    height: 370px;
+}
+
+.msAndXsg .mAxBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    margin-top: 30px;
+}
+
+.msAndXsg .mAxBar .mAxText {
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+}
+
+.msAndXsg .mAxBar .more {
+    font-size: 14px;
+    color: #606162;
+    font-weight: 700;
+}
+
+.msAndXsg .mAxPic {
+    display: flex;
+    justify-content: space-between;
+    height: 306px;
+}
+
+.msAndXsg .mAxPic li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.msAndXsg .mAxPic .countDown {
+    background-color: #eee7ea;
+}
+
+.msAndXsg .mAxPic li img {
+    width: 142px;
+    height: 142px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+}
+
+.msAndXsg .mAxPic li .superKill {
+    background: -webkit-linear-gradient(top left, rgb(190, 43, 52), rgb(234, 68, 84));
+    padding: 0 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.msAndXsg .mAxPic li .goodsTitle {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    width: 100%;
+    /* 溢出部分省略 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+.msAndXsg .mAxPic li .price {
+    margin-top: 15px;
+}
+
+.msAndXsg .mAxPic li .price .afterPrice {
+    color: #be2a34;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.msAndXsg .mAxPic .countDown img {
+    width: 48px;
+    height: 48px;
+    margin-top: 50px;
+}
+
+.msAndXsg .mAxPic li .point {
+    color: #bd2c34;
+    font-size: 20px;
+    font-weight: 900;
+    /* margin-top: 12px; */
+}
+
+.msAndXsg .mAxPic li .least {
+    font-size: 18px;
+    color: #787476;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.msAndXsg .mAxPic li .timer {
+    margin-top: 20px;
+}
+
+.msAndXsg .mAxPic li .timer span,
+.mAxTextCountDown .timer span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #5f5d5d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 5px;
+}
+
+.msAndXsg .mAxPic li .timer em {
+    color: #5f5d5d;
+    font-size: 14px;
+}
+
+.mAxTextCountDown {
+    display: flex;
+    align-items: center;
+}
+
+.mAxTextCountDown .least {
+    color: #919293;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.mAxTextCountDown .timer {
+    margin-left: 10px;
+}
+
+.mAxTextCountDown .timer span {
+    width: 32px;
+    height: 32px;
+    background-color: #be2a34;
+    padding-top: 5px;
+}
+
+
+/* 爆款推荐区域 */
+
+.popularRecommendation {
+    height: 688px;
+}
+
+.popularRecommendation .popularTitle {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.popularRecommendation .popularGoods,
+.boutique .boutiqueGoods {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 624px;
+}
+
+.popularRecommendation .popularGoods .different,
+.boutique .boutiqueGoods .different {
+    width: 472px;
+    height: 306px;
+    background-color: pink;
+}
+
+.popularRecommendation .popularGoods,
+.boutique .boutiqueGoods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.popularRecommendation .popularGoods li:nth-child(n+2),
+.boutique .boutiqueGoods li:nth-child(n+2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    height: 306px;
+    background-color: #fff;
+}
+
+.popularRecommendation .popularGoods .different img,
+.boutique .boutiqueGoods .different img {
+    width: 100%;
+    height: 100%;
+}
+
+.popularRecommendation .popularGoods li:nth-child(n+2) img,
+.boutique .boutiqueGoods li:nth-child(n+2) img {
+    width: 142px;
+    height: 142px;
+    margin: 30px 0;
+}
+
+.popularRecommendation .popularGoods li:nth-child(n+2) div,
+.boutique .boutiqueGoods li:nth-child(n+2) div {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.popularRecommendation .popularGoods li:nth-child(n+2) div span,
+.boutique .boutiqueGoods li:nth-child(n+2) div span {
+    background: -webkit-linear-gradient(top left, rgb(190, 43, 52), rgb(234, 68, 84));
+    padding: 2px 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 1000;
+    /* 溢出部分省略 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.popularRecommendation .popularGoods li:nth-child(n+2) span,
+.boutique .boutiqueGoods li:nth-child(n+2) span {
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+
+/* 副轮播图区域 */
+
+.secondSwiper {
+    width: 1200px;
+    height: 120px;
+    margin-top: 25px;
+}
+
+.secondSwiper .swiper-slide img {
+    width: 100%;
+    right: 0;
+}
+
+
+/* 大类商品区域 */
+
+.normalGoods,
+.boutique {
+    /* height: 850px; */
+    margin-top: 30px;
+}
+
+.normalGoods .normalBar,
+.boutique .boutiqueBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.normalGoods .normalBar .normalText,
+.boutique .boutiqueBar .boutiqueText {
+    display: flex;
+    align-items: center;
+}
+
+.normalGoods .normalBar .normalText span,
+.boutique .boutiqueBar .boutiqueText span {
+    margin-right: 40px;
+}
+
+.normalGoods .normalBar .normalText span:first-child,
+.boutique .boutiqueBar .boutiqueText span:first-child {
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+}
+
+.normalGoods .normalBar .normalText span:nth-child(n+2),
+.boutique .boutiqueBar .boutiqueText span:nth-child(n+2) {
+    font-size: 18px;
+    color: #606162;
+    font-weight: 700;
+}
+
+.normalGoods .normalPic {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.normalGoods .normalPic li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 291px;
+    height: 387px;
+    background-color: #fff;
+}
+
+.normalGoods .normalPic li img {
+    width: 180px;
+    height: 192px;
+    margin: 25px 0;
+}
+
+.normalGoods .normalPic li:nth-child(n+5) {
+    margin-top: 10px;
+}
+
+.normalGoods .normalPic li div .tag {
+    background: -webkit-linear-gradient(top left, rgb(190, 43, 52), rgb(234, 68, 84));
+    padding: 2px 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 1000;
+    margin-right: 5px;
+}
+
+.normalGoods .normalPic li div .name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.normalGoods .normalPic li .discount {
+    font-size: 12px;
+    margin: 5px 0 10px 0;
+}
+
+.normalGoods .normalPic li .price {
+    color: #be2a34;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.normalGoods .normalPic li div:last-child {
+    display: flex;
+}
+
+.normalGoods .normalPic li div:last-child span {
+    padding: 0 3px;
+    border: 1px solid red;
+    border-radius: 6px;
+    color: red;
+    margin: 5px 5px 0 5px;
+}
+
+.normalGoods .normalPic li .changePrice {
+    display: flex;
+    align-items: center;
+}
+
+.normalGoods .normalPic li .changePrice del {
+    margin-left: 5px;
+}
+
+.normalGoods .normalPic li .winePrice {
+    margin-top: 30px;
+}
+
+.tagStyle2 {
+    background-color: #f8e8ea;
+    padding: 0 5px;
+    border-radius: 6px;
+    color: #be2a34;
+    font-size: 12px;
+    font-weight: 1000;
+    margin-bottom: 5px;
+}
+
+.boutique .boutiqueGoods li .name {
+    width: 100%;
+    /* 溢出部分省略 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+.boutique .boutiqueGoods li div:last-child {
+    display: flex;
+}
+
+.boutique .boutiqueGoods li div:last-child em {
+    background-color: #fff;
+    padding: 0 3px;
+    border: 1px solid red;
+    border-radius: 6px;
+    color: red;
+    margin: 5px 5px 0 5px;
+    font-size: 12px;
+}
+
+
+/* 底部横栏区域 */
+
+.bottomBar {
+    height: 120px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.bottomBar .centerBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottomBar .centerBox li {
+    display: flex;
+    align-items: center;
+}
+
+.bottomBar .centerBox li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.bottomBar .centerBox li span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+/* 底部导航区域 */
+
+.bottomNav {
+    height: 310px;
+    background-color: #fff;
+}
+
+.bottomNav .centerBox {
+    display: flex;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.bottomNav .centerBox .leftBox {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+}
+
+.bottomNav .centerBox .leftBox dl dt {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    margin: 60px 0 25px;
+}
+
+.bottomNav .centerBox .leftBox dl dd {
+    margin-top: 10px;
+}
+
+.bottomNav .centerBox .rightBox {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.bottomNav .centerBox .rightBox section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 50%;
+    border-left: 1px solid #f2f2f2;
+}
+
+.bottomNav .centerBox .rightBox section h2 {
+    font-size: 22px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.bottomNav .centerBox .rightBox section em {
+    font-size: 12px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.icon-phone-call:before {
+    font-family: 'icomoon';
+    content: "\e902";
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.bottomNav .centerBox .rightBox section .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 34px;
+    background-color: #191919;
+    border-radius: 17px;
+    color: #fff;
+    font-weight: 700;
+    margin: 18px 0;
+}
+
+.bottomNav .centerBox .rightBox section .attention {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.icon-wechat:before {
+    font-family: 'icomoon';
+    content: "\e904";
+    color: #312f30;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.icon-baidu:before {
+    font-family: 'icomoon';
+    content: "\e903";
+    color: #312f30;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.icon-sina-weibo:before {
+    font-family: 'icomoon';
+    content: "\ea9a";
+    color: #312f30;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+
+/* 底部声明区域 */
+
+.announce {
+    height: 150px;
+    background-color: #fff;
+}
+
+.announce .centerBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.announce .centerBox .footer-logo,
+.announce .centerBox .police {
+    display: block;
+    width: 82px;
+    height: auto;
+    background: url(../images/smallLogo.png) no-repeat;
+    background-size: 100%;
+    margin-right: 30px;
+}
+
+.announce .centerBox .fl {
+    position: absolute;
+    left: 100px;
+}
+
+.announce .centerBox .fl ul {
+    display: flex;
+    margin: 5px 0;
+}
+
+.announce .centerBox .fl ul li::after {
+    content: '|';
+    color: #e5e5e5;
+    margin: 0 5px;
+}
+
+.announce .centerBox .fl ul li:last-child::after {
+    content: '';
+    color: #e5e5e5;
+}
+
+.announce .centerBox .fl ul:nth-child(1) li a {
+    font-size: 13px;
+}
+
+.announce .centerBox .fl ul:nth-child(n+2) li,
+.announce .centerBox .fl ul:nth-child(n+2) li a {
+    color: #999;
+}
+
+.announce .centerBox .police {
+    width: 92px;
+    height: auto;
+    background: url(../images/police.png) no-repeat;
+    margin-right: 0;
+}
